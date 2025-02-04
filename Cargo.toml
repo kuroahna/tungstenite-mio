@@ -1,0 +1,14 @@
+[package]
+name = "tungstenite-mio"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+mio = { version = "1.0.3", default-features = false, features = [
+  "os-poll",
+  "net",
+] }
+tungstenite = { version = "0.26.1", default-features = false, features = [
+  "handshake",
+] }
